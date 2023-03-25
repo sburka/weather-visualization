@@ -48,7 +48,7 @@ var chartG = svg.append('g');
 
 // **** D3 Code ****
 
-d3.csv("/data/precip.csv").then(function(data) {
+d3.csv("weather-visualization/data/precip.csv").then(function(data) {
     dataset = data;
 
     updateChart("all");
