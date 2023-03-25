@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Precipitation Worldwide</title>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <svg class="chart" width="800" height="400" style="border: 1px solid #777;">
+    </svg>
+	<p>Select a city to view its precipitation trends individually, or "All Cities" to view all precipitation trends.</p>
+	<label for="city">Filter by City:</label>
+	<select class="custom-select" id="categorySelect" onchange="onCategoryChanged()">
+		<option selected value="all">All Cities</option>
+		<option value="KSEA">KSEA</option>
+		<option value="CLT">CLT</option>
+		<option value="CQT">CQT</option>
+		<option value="IND">IND</option>
+		<option value="JAX">JAX</option>
+		<option value="MDW">MDW</option>
+		<option value="PHL">PHL</option>
+		<option value="PHX">PHX</option>
+		<option value="KHOU">KHOU</option>
+		<option value="KNYC">KNYC</option>
+	</select>
+</body>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="scatter6.js"></script>
+</html>
