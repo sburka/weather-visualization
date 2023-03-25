@@ -1,0 +1,40 @@
+* {
+    font-family: "Arial";
+   }
+
+
+
+   circle {
+    /* fill: teal; */
+    opacity: 40%;
+}
+
+
+#main {
+    margin: 10px 20px;
+}
+
+text .precipLabel {
+    font-size: 7px;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 0;
+}
+
+.precipLabel hover {
+    opacity: 1;
+    color: grey;
+}
+
+
+
+.axis text {
+    fill: #555;
+    opacity: 1;
+}
+
+.axis line,
+.axis path {
+    stroke: #555;
+}
+
